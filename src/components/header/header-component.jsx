@@ -1,22 +1,28 @@
-import React from 'react';
-import {BrowserRouter, Link} from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import {ReactComponent as Logo} from '../../assets/images/original.svg';
+import { ReactComponent as Logo } from "../../assets/images/original.svg";
 
-import './header.style.scss';
+import "./header.style.scss";
 
 const Header = () => (
-	<div className="header">
-		
-		<Link className="logo-container" to="/">
-			<Logo className="logo" />
-		</Link>
-		
-		<div className="options">
-			<Link className="option" to="/shop">SHOP</Link>
-			<Link className="option" to="/contact">CONTACT</Link>
-		</div>
-	</div>
-)
+  <div className="header">
+    <Link className="logo-container" to="/">
+      <Logo className="logo" />
+    </Link>
+
+    <div className="options">
+      <Link className="option" to="/shop">
+        SHOP
+      </Link>
+      <Link className="option" to="/signinandsignup">
+        SIGN IN
+      </Link>
+      <Link className="option" to="/contact">
+        CONTACT
+      </Link>
+    </div>
+  </div>
+);
 
 export default Header;
