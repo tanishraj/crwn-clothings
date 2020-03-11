@@ -7,14 +7,14 @@ import './header.style.scss';
 
 const Header = () => (
 	<div className="header">
-		<BrowserRouter>
-			<Link className="logo-container" to="/">
-				<Logo className="logo" />
-			</Link>
-		</BrowserRouter>
+		
+		<Link className="logo-container" to="/">
+			<Logo className="logo" />
+		</Link>
+		
 		<div className="options">
-			<BrowserRouter><Link className="option" to="/shop">SHOP</Link></BrowserRouter>
-			<BrowserRouter><Link className="option" to="/contact">CONTACT</Link></BrowserRouter>
+			<Link className="option" to="/shop">SHOP</Link>
+			<Link className="option" to="/contact">CONTACT</Link>
 		</div>
 	</div>
 )

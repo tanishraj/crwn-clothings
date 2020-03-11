@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Header />
       <BrowserRouter>
+        <Header />
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
